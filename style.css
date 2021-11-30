@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Ubuntu:wght@500&display=swap');
+
+:root{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    height: 97.1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 63.5vh;
+    width: 224px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px hsl(220, 86%, 8%), 0 0 25px 25px hsl(221, 69%, 10%);
+}
+
+.image1 img{
+    position: relative;
+    height: 190px;
+    border-radius: 8px;
+    margin: 17px 17px 14px 17px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.image1{
+    cursor: pointer;
+}
+
+.image2 img{
+    display: inline;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.image2{
+    padding-top: 9px;
+    margin: 0 8px 0 17px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 17px;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+}
+
+.two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    color: hsl(215, 51%, 70%);
+}
+
+.icon1, .icon2{
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.mid img{
+    height: 12.5px;
+}
+
+.head{
+    margin: 0 auto 0 17px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 14.5px;
+    display: inline;
+    cursor: pointer;
+}
+
+.para{
+    color: hsl(215, 51%, 70%);
+    font-size: 11px;
+    margin: 13px auto 2px 17px;
+}
+
+.one p{
+    color: hsl(178, 100%, 50%);
+}
+
+.half1{
+    display: inline;
+    color: hsl(215, 51%, 70%);
+    padding-top: 5px; 
+    margin-right: 2px;
+}
+
+.half2{
+    display: inline;
+    color: hsl(0, 0%, 100%);
+    padding-top: 5px; 
+}
+
+.bottom{
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.line{
+    width: 190px;
+    margin: 0 17px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.eyebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -190px;
+    height: 190px;
+    width: 190px;
+    border-radius: 8px;
+    background-color: hsl(178, 100%, 50%, 0.35);
+    margin-left: 17px;
+}
+
+.eye{
+    height: 32px;
+}
+
+.head:hover ~ .eyebox{
+    top: calc((100vh - 63.5vh)/2 + 17px);
+}
+.image1:hover ~ .eyebox{
+    top: calc((100vh - 63.5vh)/2 + 17px);
+}
+.bottom:hover ~ .eyebox{
+    top: calc((100vh - 63.5vh)/2 + 17px);
+}
