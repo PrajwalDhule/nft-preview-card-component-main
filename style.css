@@ -22,16 +22,10 @@
     box-shadow: 0 0 10px 10px hsl(220, 86%, 8%), 0 0 25px 25px hsl(221, 69%, 10%);
 }
 
-.image1 img{
-    position: relative;
+.image1{
     height: 190px;
     border-radius: 8px;
     margin: 17px 17px 14px 17px;
-    z-index: 0;
-    cursor: pointer;
-}
-
-.image1{
     cursor: pointer;
 }
 
@@ -113,11 +107,11 @@
     display: inline;
     color: hsl(0, 0%, 100%);
     padding-top: 5px; 
+    cursor: pointer;
 }
 
 .bottom{
     font-size: 11px;
-    cursor: pointer;
 }
 
 .line{
@@ -144,12 +138,24 @@
     height: 32px;
 }
 
-.head:hover ~ .eyebox{
-    top: calc((100vh - 63.5vh)/2 + 17px);
-}
 .image1:hover ~ .eyebox{
+    transform: translateY(calc((100vh - 63.5vh)/2 + 17px + 190px));
+    animation: transform infinite infinite;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.head:hover{
+    color: cyan;
+}
+
+.half2:hover{
+    color: cyan;
+}
+
+/* .head:hover ~ .eyebox{
     top: calc((100vh - 63.5vh)/2 + 17px);
 }
-.bottom:hover ~ .eyebox{
+.half2:hover ~ .eyebox{
     top: calc((100vh - 63.5vh)/2 + 17px);
-}
+} */
